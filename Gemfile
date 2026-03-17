@@ -13,9 +13,9 @@ gem "cgi"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "sqlite3", "~> 2.1"
 end
 
-group :development do
-  gem "tabulo"
-  gem "web-console"
+group :production do
+  gem 'pg'
 end
